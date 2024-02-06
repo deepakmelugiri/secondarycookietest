@@ -1,6 +1,14 @@
 <!DOCTYPE html>
 <head lang="en">
 <title>cookie test 2</title>
+  <script>
+    window.addEventListener('meesage', () => {
+      const receivedCookies = event.data.cookies;
+      console.log("cookie1", receivedCookies);
+    });
+    const cookies = window.parent.document.cookie;
+    console.log("cookie2", cookies);
+  </script>
 </head>
 <body>
   <div>COOKIE TEST 2</div>
